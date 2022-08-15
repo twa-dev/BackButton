@@ -1,6 +1,6 @@
 {
   "name": "@twa-dev/backbutton",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React component for Telegram Web Apps (TWA) Back Button",
   "main": "dist/index.js",
   "repository": "https://github.com/twa-dev/BackButton.git",
