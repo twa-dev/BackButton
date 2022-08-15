@@ -1,4 +1,6 @@
 ## BackButton
+[![npm version](https://img.shields.io/npm/v/@twa-dev/backbutton)](https://www.npmjs.com/package/@twa-dev/backbutton)
+
 React component for [Telegram Web Apps (TWA)](https://core.telegram.org/bots/webapps) Back Button.
 
 ```
