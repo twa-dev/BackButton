@@ -1,12 +1,12 @@
-## MainButton
+## BackButton
 React component for [Telegram Web Apps (TWA)](https://core.telegram.org/bots/webapps) Back Button.
 
 ```
-npm i @twa-dev/mainbutton
+npm i @twa-dev/backbutton
 ```
 
 ### Motivation
-TWA SDK contains interface to control [MainButton](https://core.telegram.org/bots/webapps#backbutton). It's written in imperative way:
+TWA SDK contains interface to control [BackButton](https://core.telegram.org/bots/webapps#backbutton). It's written in imperative way:
 
 ```js
 const BackButton = window.Telegram.WebApp.BackButton;
@@ -26,6 +26,6 @@ import BackButton from '@twa-dev/backbutton';
 ```
 
 ### Demo
-[@MainButtonDemoBot](https://t.me/MainButtonDemoBot)
+[@BackButtonDemoBot](https://t.me/BackButtonDemoBot)
 
-[Codesandbox](https://codesandbox.io/s/main-button-demo-732l5z)
+[Codesandbox](https://codesandbox.io/s/back-button-demo-lpc0rv)
