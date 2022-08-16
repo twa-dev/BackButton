@@ -1,19 +1,17 @@
 import { FC, useEffect } from "react";
-import { Telegram } from "@twa-dev/types";
+import WebApp from "@twa-dev/sdk";
 
 interface BackButtonProps {
   onClick?: VoidFunction;
 }
 
-const telegramWindow = window as unknown as Window & { Telegram: Telegram };
-
-const backButton = telegramWindow.Telegram.WebApp.BackButton;
+const backButton = WebApp.BackButton;
 
 let isButtonShown = false;
 
 export const BackButton: FC<BackButtonProps> = ({
   onClick = () => {
-    telegramWindow.history.back();
+    window.history.back();
   },
 }) => {
   useEffect(() => {
@@ -32,9 +30,9 @@ export const BackButton: FC<BackButtonProps> = ({
   }, []);
 
   useEffect(() => {
-    telegramWindow.Telegram.WebApp.onEvent("backButtonClicked", onClick);
+    WebApp.onEvent("backButtonClicked", onClick);
     return () => {
-      telegramWindow.Telegram.WebApp.offEvent("backButtonClicked", onClick);
+      WebApp.offEvent("backButtonClicked", onClick);
     };
   }, [onClick]);
 
