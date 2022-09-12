@@ -1,3 +1,7 @@
+> **DEPRECATED**
+> 
+> `BackButton` moved to [@twa-dev/sdk](https://github.com/twa-dev/sdk). This repo and corresponding npm-package are deprecated.
+
 ## BackButton
 [![npm version](https://img.shields.io/npm/v/@twa-dev/backbutton)](https://www.npmjs.com/package/@twa-dev/backbutton)
 
